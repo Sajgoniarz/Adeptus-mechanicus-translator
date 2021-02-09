@@ -1,0 +1,34 @@
+{
+    "name": "AdMech translator",
+    "version": "1.0",
+    "description": "From the moment I understood the weakness of my flesh, I crave the strenght and certainty of binary communication.",
+    "manifest_version": 2,
+    "permissions": [
+        "contextMenus"
+    ],
+    "icons": {
+        "128": "mechanicus-128.png",
+        "48": "mechanicus-48.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "translationOverlay.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "popup.html"
+    ]
+}

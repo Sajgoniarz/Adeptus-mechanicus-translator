@@ -1,0 +1,49 @@
+.ad-mech-window {
+    position: absolute;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    word-wrap: break-word; 
+    background: repeating-linear-gradient(
+        0deg, rgb(13,120,130) 0,
+        rgb(30,124,124) 2px,
+        rgb(30, 124, 124) 2px,
+        rgb(1,75,88) 2px, 
+        rgb(1,75,88) 10px);
+    border: 3px solid rgb(131,100,92);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.ad-mech-window > .bar {
+    background: rgb(53,39,30);
+    color: white;
+    height: 22px;
+    padding: 3px 3px 2px;
+    text-align: center;
+}
+
+.ad-mech-window > .bar > button {
+    background: rgb(8,25,19);    
+    color: white;
+    border: 2px solid rgb(107,212,198);
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 18px;
+    float: right;
+}
+
+.ad-mech-window > .container {
+    overflow: auto;
+}
+
+.ad-mech-window > .container > p {
+    margin: 5px;
+}
